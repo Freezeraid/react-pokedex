@@ -1,4 +1,4 @@
-[{
+const POKEMONS = [{
     "id": 1,
     "name": {
       "english": "Bulbasaur",
@@ -16584,3 +16584,5 @@
     }
   }
 ]
+
+export default POKEMONS;
