@@ -3,6 +3,7 @@
     padding: 2rem;
     background-size: cover;
     box-shadow: 2px 2px 10px -2px #00000075;
+    cursor: pointer;
 }
 
 .pokemon-container.bug {
