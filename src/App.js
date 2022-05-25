@@ -21,9 +21,23 @@ function App() {
   }
 
   const editPokemonList = (e) => {
-    const pokemonName = e.target.value;
+    const search = e.target.value;
     startTransition(() => {
-      const newList = POKEMONS.filter((element) => element.name.english.includes(pokemonName));
+      const newList = POKEMONS.filter((element) => {
+        if (element.name.english.toLowerCase().includes(search.toLowerCase())) {
+          return true;
+        } else if (element.id == search) {
+          return true;
+        }
+        
+        for (let pokeType of element.type){
+          if (pokeType.toLowerCase().includes(search.toLowerCase())) {
+            return true;
+          }
+        }
+
+        return false;
+      });
       setPokemonList([...newList]);
     })
   }
@@ -34,7 +48,8 @@ function App() {
 
   return (
     <div className="App">
-      <input type="text" name="pokemon-input" id="pokemon-input" placeholder='Search for a Pokemon'
+      <img src="/Images/Logo/pokeball-grey.png" id="pokeball-grey" alt="pokeball grey" />
+      <input type="text" name="pokemon-input" id="pokemon-input" placeholder="Search a name, an ID, a type"
       onChange={editPokemonList}/>
       <h1 id="pokedex-title">Pokedex</h1>
       <main id="pokedex">
