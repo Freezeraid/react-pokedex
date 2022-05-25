@@ -24,9 +24,15 @@ export default function Pokemon({id, names, types}) {
         return `/Images/thumbnails/${formatPokeId(id)}.png`;
     }
 
+    const getPokemonIcon = () => {
+        return `/Images/sprites/${formatPokeId(id)}MS.png`;
+    }
+
     return (
         <article className={`pokemon-container ${types[0].toLowerCase()}`}>
-            <h4>#{displayIndex(id)} {names.english}</h4>
+            <div className='name-container'>
+                <h4>#{displayIndex(id)} {names.english}</h4><img src={getPokemonIcon()} alt={`${names.english} sprite`}></img>
+            </div>
             <div className='details-container'>
                 <div className='type-container'>
                     {displayType()}

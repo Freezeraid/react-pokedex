@@ -78,10 +78,16 @@
     background-image: url('../../public/Images/backgrounds/water.jpg');
 }
 
-.pokemon-container > h4 {
+.name-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.name-container > h4 {
     font-size: 1.5rem;
     color: white;
-    margin-bottom: 2rem;
 }
 
 .details-container {
