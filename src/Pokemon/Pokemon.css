@@ -1,0 +1,115 @@
+.pokemon-container {
+    border-radius: 10px 10px;
+    padding: 2rem;
+    background-size: cover;
+    box-shadow: 2px 2px 10px -2px #00000075;
+}
+
+.pokemon-container.bug {
+    background-image: url('../../public/Images/backgrounds/bug.jpg');
+}
+
+.pokemon-container.dark {
+    background-image: url('../../public/Images/backgrounds/dark.jpg');
+}
+
+.pokemon-container.dragon {
+    background-image: url('../../public/Images/backgrounds/dragon.jpg');
+}
+
+.pokemon-container.electric {
+    background-image: url('../../public/Images/backgrounds/electric.jpg');
+}
+
+.pokemon-container.fairy {
+    background-image: url('../../public/Images/backgrounds/fairy.jpg');
+}
+
+.pokemon-container.fighting {
+    background-image: url('../../public/Images/backgrounds/fighting.jpg');
+}
+
+.pokemon-container.fire {
+    background-image: url('../../public/Images/backgrounds/fire.jpg');
+}
+
+.pokemon-container.flying {
+    background-image: url('../../public/Images/backgrounds/flying.jpg');
+}
+
+.pokemon-container.ghost {
+    background-image: url('../../public/Images/backgrounds/ghost.jpg');
+}
+
+.pokemon-container.grass {
+    background-image: url('../../public/Images/backgrounds/grass.jpg');
+}
+
+.pokemon-container.ground {
+    background-image: url('../../public/Images/backgrounds/ground.jpg');
+}
+
+.pokemon-container.ice {
+    background-image: url('../../public/Images/backgrounds/ice.jpg');
+}
+
+.pokemon-container.normal {
+    background-image: url('../../public/Images/backgrounds/normal.jpg');
+}
+
+.pokemon-container.poison {
+    background-image: url('../../public/Images/backgrounds/poison.jpg');
+}
+
+.pokemon-container.psychic {
+    background-image: url('../../public/Images/backgrounds/psychic.jpg');
+}
+
+.pokemon-container.rock {
+    background-image: url('../../public/Images/backgrounds/rock.jpg');
+}
+
+.pokemon-container.steel {
+    background-image: url('../../public/Images/backgrounds/steel.jpg');
+}
+
+.pokemon-container.water {
+    background-image: url('../../public/Images/backgrounds/water.jpg');
+}
+
+.pokemon-container > h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.details-container {
+    display: flex;
+}
+
+.type-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    flex: 3;
+}
+
+.img-container {
+    flex: 4;
+    display: flex;
+    justify-content: end;
+}
+
+.type {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 2% 0;
+    padding: 10% 0%;
+    border-radius: 1rem;
+    font-weight: bold; 
+    text-align: center;
+    color: white;
+}
+
+.pokemon-picture {
+    height: 100%;
+}
