@@ -1,7 +1,12 @@
 import React from 'react'
 import './Pokemon.css'
+import { useContext } from 'react'
+import { ModalContext } from '../Context/ModalContext'
+import '../Backgrounds/Backgrounds.css'
 
 export default function Pokemon({id, names, types}) {
+    const { setIsVisible, setPokemonData } = useContext(ModalContext);
+
     const formatPokeId = (index) => {
         if (index < 10){
             return `00${index}`;
@@ -28,8 +33,20 @@ export default function Pokemon({id, names, types}) {
         return `/Images/sprites/${formatPokeId(id)}MS.png`;
     }
 
+    const callModal = (e) => {
+        setIsVisible(prev => !prev); 
+        setPokemonData({
+            'id': formatPokeId(id),
+            'icon': getPokemonIcon(),
+            'picture': getPokemonPicture().replace("thumbnails", "images"),
+            'names': names,
+            'types': types,
+            'bg': e.target.style.backgroundImage
+        });
+    }
+
     return (
-        <article className={`pokemon-container ${types[0].toLowerCase()}`}>
+        <article className={`pokemon-container ${types[0].toLowerCase()}`} onClick={(e) => callModal(e)}>
             <div className='name-container'>
                 <h4>#{displayIndex(id)} {names.english}</h4><img src={getPokemonIcon()} alt={`${names.english} sprite`}></img>
             </div>

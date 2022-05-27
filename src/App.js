@@ -2,6 +2,7 @@ import { useState, useEffect, useTransition } from 'react';
 import './App.css';
 import POKEMONS from './Constants/pokedex';
 import Pokemon from './Pokemon/Pokemon';
+import Modal from './Modal/Modal';
 
 function App() {
   const [ isPending, startTransition ] = useTransition();
@@ -55,6 +56,7 @@ function App() {
       <main id="pokedex">
         {displayPokemonList()}
       </main>
+      <Modal />
     </div>
   );
 }

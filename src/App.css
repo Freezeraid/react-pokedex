@@ -26,7 +26,7 @@
 }
 
 #pokeball-grey {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top: -10rem;
     right: -10rem;

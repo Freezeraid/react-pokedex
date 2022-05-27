@@ -1,0 +1,96 @@
+#background-modal {
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#background-modal {
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#modal-container {
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(245, 245, 245);
+    width: 60vw;
+    left: 20vw;
+    top: 0;
+    border-radius: 30px 30px;
+    margin: 5% 0;
+}
+
+#modal-pokemon-summary {
+    color: white;
+    min-height: 40vh;
+    background-size: cover;
+    background-position-y: 50%;
+    border-radius: 30px 30px 30px 30px;
+    padding: 5% 10%;
+}
+
+#modal-pokemon-summary > svg {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#modal-pokemon-header-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#modal-pokemon-name {
+    font-size: 3rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.modal-pokemon-type {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border-radius: 25px 25px;
+}
+
+.modal-pokemon-type:first-child {
+    margin-right: 1rem;
+}
+
+#modal-pokemon-index {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#modal-pokemon-details {
+    min-height: 40vh;
+    padding: 5% 10%;
+    position: relative;
+}
+
+#modal-pokemon-picture-container {
+    display: flex;
+    justify-content: center;
+}
+
+#modal-pokemon-picture {
+    position: absolute;
+    top: -60%;
+    display: block;
+    margin: auto auto;
+    max-height: 70%;
+}
+
+.none {
+    display: none;
+}
