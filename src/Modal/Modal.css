@@ -140,6 +140,10 @@
         height: 100%;
     }
 
+    #modal-container::-webkit-scrollbar {
+        display: none;
+    }
+
     #modal-infos-container {
         margin: 5% 5% 0 5%;
     }
@@ -159,8 +163,8 @@
     }
 
     #modal-pokemon-picture-container {
-        height: 50%;
-        bottom: -7.5%;
+        height: 40%;
+        bottom: -10%;
     }
 
     #modal-pokemon-name {
