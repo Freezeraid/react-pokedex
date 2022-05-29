@@ -42,14 +42,14 @@ export default function Pokemon({id, names, types}) {
     return (
         <article className={`pokemon-container ${types[0].toLowerCase()}`} onClick={(e) => callModal(e)}>
             <div className='name-container'>
-                <h4>#{displayIndex(id)} {names.english}</h4><img src={getPokemonIcon()} alt={`${names.english} sprite`}></img>
+                <h4>#{displayIndex(id)} {names.english}</h4><img loading="lazy" src={getPokemonIcon()} alt={`${names.english} sprite`}></img>
             </div>
             <div className='details-container'>
                 <div className='type-container'>
                     {displayType()}
                 </div>
                 <div className='img-container'>
-                    <img className='pokemon-picture' src={getPokemonPicture()} alt={`${names.english} illustration`} />
+                    <img loading="lazy" className='pokemon-picture' src={getPokemonPicture()} alt={`${names.english} illustration`} />
                 </div>
             </div>
         </article>
