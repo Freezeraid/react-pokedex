@@ -2,6 +2,7 @@ import React from 'react'
 import './Pokemon.css'
 import { useContext } from 'react'
 import { ModalContext } from '../Context/ModalContext'
+import POKEMONS from '../Constants/pokedex';
 import '../Backgrounds/Backgrounds.css'
 
 export default function Pokemon({id, names, types}) {
@@ -21,7 +22,7 @@ export default function Pokemon({id, names, types}) {
 
     const displayType = () => {
         return (
-            types.map((element) => <span className="type">{element}</span>)
+            types.map((element, i) => <span className="type" key={i}>{element}</span>)
         )
     }
 
@@ -35,14 +36,7 @@ export default function Pokemon({id, names, types}) {
 
     const callModal = (e) => {
         setIsVisible(prev => !prev); 
-        setPokemonData({
-            'id': formatPokeId(id),
-            'icon': getPokemonIcon(),
-            'picture': getPokemonPicture().replace("thumbnails", "images"),
-            'names': names,
-            'types': types,
-            'bg': e.target.style.backgroundImage
-        });
+        setPokemonData(POKEMONS[id - 1]);
     }
 
     return (

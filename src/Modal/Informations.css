@@ -1,0 +1,15 @@
+#informations-component {
+    display: flex;
+}
+
+#informations-component > * {
+    flex: 1;
+}
+
+#informations-component > * > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.gender-icon {
+    font-weight: bold;
+}

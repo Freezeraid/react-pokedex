@@ -10,7 +10,7 @@ function App() {
 
   const displayPokemonList = () => {
     return(
-      pokemonList.map((element) => {
+      pokemonList.map((element, index) => {
         return <Pokemon 
         key={element.id}
         id={element.id}

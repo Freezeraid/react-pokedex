@@ -1,0 +1,32 @@
+#no-evolution-warning {
+    padding: 5% 0;
+    text-align: center;
+}
+
+#evolutions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto 10% auto;
+}
+
+#evolutions-container > *:not(:last-child) {
+    margin-right: 3rem;
+}
+
+#evolutions-container > svg {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#evolutions-container > img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#evolution-indication {
+    font-size: 0.8rem;
+    font-style: italic;
+}

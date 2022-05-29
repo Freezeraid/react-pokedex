@@ -1,0 +1,85 @@
+#stats-component {
+    padding: 0 10%;
+}
+
+#stats-container {
+    margin-bottom: 2rem;
+}
+
+#stats-container > div:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.one-stat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-progress {
+    flex: 8;
+    display: flex;
+    align-items: flex-start;
+}
+
+.stat-progress > progress{
+    width: 100%;
+    margin: 0 5%;
+}
+
+.stat-name {
+    font-weight: bold;
+    flex: 3;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.stat-value { 
+    font-weight: bold;
+}
+
+progress {
+    background: transparent;
+    border: 1px solid lightgray;
+    border-radius: 20px 20px;
+}
+  
+progress::-webkit-progress-value {
+    border-radius: 20px 20px;
+}
+  
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress.sub20::-webkit-progress-value {
+    background: darkblue;
+}
+
+progress.sub40::-webkit-progress-value {
+    background: blue;
+}
+
+progress.sub60::-webkit-progress-value {
+    background: green;
+}
+
+progress.sub80::-webkit-progress-value {
+    background: lightgreen;
+}
+
+progress.sub100::-webkit-progress-value {
+    background: orange;
+}
+
+progress.sub120::-webkit-progress-value {
+    background: red;
+}
+
+progress.sub140::-webkit-progress-value {
+    background: darkred;
+}
+
+progress.over140::-webkit-progress-value {
+    background: black;
+}

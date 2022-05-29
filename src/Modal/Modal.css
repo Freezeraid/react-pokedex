@@ -26,7 +26,7 @@
     left: 20vw;
     top: 0;
     border-radius: 30px 30px;
-    margin: 5% 0;
+    margin: 2.5% 0;
 }
 
 #modal-pokemon-summary {
@@ -36,6 +36,7 @@
     background-position-y: 50%;
     border-radius: 30px 30px 30px 30px;
     padding: 5% 10%;
+    position: relative;
 }
 
 #modal-pokemon-summary > svg {
@@ -73,24 +74,42 @@
 }
 
 #modal-pokemon-details {
-    min-height: 40vh;
     padding: 5% 10%;
-    position: relative;
 }
 
 #modal-pokemon-picture-container {
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -15%;
+    height: 75%;
+    left: 0;
+    right: 0;
+    pointer-events: none
 }
 
 #modal-pokemon-picture {
-    position: absolute;
-    top: -60%;
-    display: block;
-    margin: auto auto;
-    max-height: 70%;
+    max-height: 100%;
 }
 
 .none {
     display: none;
+}
+
+#modal-pokemon-details > nav {
+    width: clamp(50%, 500px, 100%);
+    font-size: 1.1rem;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    font-weight: bold;
+} 
+
+#modal-pokemon-details a.active, #modal-pokemon-details a:hover {
+    text-decoration: underline;
+} 
+
+#modal-infos-container {
+    margin: 5% 15% 0 15%;
+    font-size: 1.2rem;
 }
