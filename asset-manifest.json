@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-pokedex/static/css/main.813fa692.css",
+    "main.js": "/react-pokedex/static/js/main.1afe8c1a.js",
+    "static/media/ice.jpg": "/react-pokedex/static/media/ice.4d0f89700df98c4d075f.jpg",
+    "static/media/fairy.jpg": "/react-pokedex/static/media/fairy.b13fef959acd0768fcf3.jpg",
+    "static/media/bug.jpg": "/react-pokedex/static/media/bug.7f37850afa0800410b8e.jpg",
+    "static/media/flying.jpg": "/react-pokedex/static/media/flying.f4373300c048fe40670a.jpg",
+    "static/media/poison.jpg": "/react-pokedex/static/media/poison.8e9637604f8cc6617190.jpg",
+    "static/media/dragon.jpg": "/react-pokedex/static/media/dragon.73e176aeb6ca3296df9f.jpg",
+    "static/media/steel.jpg": "/react-pokedex/static/media/steel.2fc5b18ea0d35708d052.jpg",
+    "static/media/ground.jpg": "/react-pokedex/static/media/ground.29de300be4016e019cb0.jpg",
+    "static/media/ghost.jpg": "/react-pokedex/static/media/ghost.8ca4788b4a0763d286c8.jpg",
+    "static/media/dark.jpg": "/react-pokedex/static/media/dark.380e14606998ef8cd231.jpg",
+    "static/media/rock.jpg": "/react-pokedex/static/media/rock.e8436a161f7e1d5a0d50.jpg",
+    "static/media/electric.jpg": "/react-pokedex/static/media/electric.de719fb59030d018190c.jpg",
+    "static/media/fighting.jpg": "/react-pokedex/static/media/fighting.ccf69708b84e775f6c70.jpg",
+    "static/media/grass.jpg": "/react-pokedex/static/media/grass.16f0fe433c746b454609.jpg",
+    "static/media/fire.jpg": "/react-pokedex/static/media/fire.a1dd4ee92a2f6e35acac.jpg",
+    "static/media/water.jpg": "/react-pokedex/static/media/water.669cac30768147cd6144.jpg",
+    "static/media/psychic.jpg": "/react-pokedex/static/media/psychic.a5497e4bbda3f89e5420.jpg",
+    "static/media/normal.jpg": "/react-pokedex/static/media/normal.edd46dba60077e203473.jpg",
+    "index.html": "/react-pokedex/index.html",
+    "main.813fa692.css.map": "/react-pokedex/static/css/main.813fa692.css.map",
+    "main.1afe8c1a.js.map": "/react-pokedex/static/js/main.1afe8c1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.813fa692.css",
+    "static/js/main.1afe8c1a.js"
+  ]
+}
