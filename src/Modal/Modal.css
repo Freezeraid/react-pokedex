@@ -164,7 +164,7 @@
 
     #modal-pokemon-picture-container {
         height: 40%;
-        bottom: -10%;
+        bottom: 0%;
     }
 
     #modal-pokemon-name {
