@@ -35,7 +35,7 @@ export default function Modal() {
     }
 
     const getPokemonPicture = () => {
-        return `/Images/images/${formatPokeId(pokemonData.id)}.png`
+        return `./Images/images/${formatPokeId(pokemonData.id)}.png`
     }
 
     return createPortal(

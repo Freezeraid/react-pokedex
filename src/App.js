@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="/Images/Logo/pokeball-grey.png" id="pokeball-grey" alt="pokeball grey" />
+      <img src="./Images/Logo/pokeball-grey.png" id="pokeball-grey" alt="pokeball grey" />
       <input type="text" name="pokemon-input" id="pokemon-input" placeholder="Search a name, an ID, a type"
       onChange={editPokemonList}/>
       <h1 id="pokedex-title">Pokedex</h1>

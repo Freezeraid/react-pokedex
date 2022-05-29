@@ -27,11 +27,11 @@ export default function Pokemon({id, names, types}) {
     }
 
     const getPokemonPicture = () => {
-        return `/Images/thumbnails/${formatPokeId(id)}.png`;
+        return `./Images/thumbnails/${formatPokeId(id)}.png`;
     }
 
     const getPokemonIcon = () => {
-        return `/Images/sprites/${formatPokeId(id)}MS.png`;
+        return `./Images/sprites/${formatPokeId(id)}MS.png`;
     }
 
     const callModal = (e) => {
