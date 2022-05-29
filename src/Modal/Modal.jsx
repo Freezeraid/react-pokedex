@@ -5,7 +5,7 @@ import "../Backgrounds/Backgrounds.css"
 import { ModalContext } from '../Context/ModalContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom'
+import { HashRouter, NavLink, Routes, Route } from 'react-router-dom'
 import Evolutions from './Evolutions'
 import Stats from './Stats'
 import Informations from './Informations'
@@ -58,7 +58,7 @@ export default function Modal() {
                     </div>
                 </div>
                 <div id="modal-pokemon-details">
-                    <BrowserRouter>
+                    <HashRouter>
                         <nav>
                             <NavLink to="/">Informations</NavLink>
                             <NavLink to="/evolutions">Evolutions</NavLink>
@@ -78,7 +78,7 @@ export default function Modal() {
                             <Route path='/attaques' element={<Stats stats={pokemonData.base} />}/>
                         </Routes>
                         </div>
-                    </BrowserRouter>
+                    </HashRouter>
                 </div>  
             </div>
         </>
