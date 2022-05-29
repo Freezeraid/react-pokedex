@@ -5,7 +5,7 @@
 #pokemon-input {
     display: block;
     margin: auto auto;
-    width: 30%;
+    width: 40%;
     font-size: 1.1rem;
     padding: 1rem;
     border-radius: 20px;
@@ -31,4 +31,24 @@
     top: -10rem;
     right: -10rem;
     transform: rotate(-35deg);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    #pokedex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #pokemon-input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #pokedex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #pokemon-input {
+        width: 100%;
+    }
 }

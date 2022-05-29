@@ -29,3 +29,13 @@ a, a:link, a:visited {
   text-decoration: inherit;
   color: inherit;
 }
+
+@media screen and (max-width: 768px){
+  body {
+    padding: 20% 10%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    overflow-x: hidden;
+  }
+}

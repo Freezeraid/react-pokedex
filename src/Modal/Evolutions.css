@@ -30,3 +30,13 @@
     font-size: 0.8rem;
     font-style: italic;
 }
+
+@media screen and (max-width: 768px){
+    #evolutions-container {
+        margin: 25% auto 10% auto;
+    }
+
+    #evolutions-container > *:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}

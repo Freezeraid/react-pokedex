@@ -113,3 +113,64 @@
     margin: 5% 15% 0 15%;
     font-size: 1.2rem;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    #modal-container {
+        width: 80vw;
+        left: 10vw;
+        margin: 2.5% 0;
+    }
+
+    #modal-pokemon-details * {
+        font-size: 1rem;
+    }
+
+    #modal-pokemon-picture-container {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #modal-container {
+        width: 100vw;
+        left: 0;
+        border-radius: 0px 0px;
+        margin: 0;
+    }
+
+    #modal-infos-container {
+        margin: 5% 5% 0 5%;
+    }
+
+    #modal-pokemon-summary {
+        min-height: 50vh;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    #modal-pokemon-details {
+        min-height: 50vh;
+        border-radius: 0px 0px;
+    }
+
+    #modal-pokemon-details * {
+        font-size: 0.9rem;
+    }
+
+    #modal-pokemon-picture-container {
+        height: 60%;
+        bottom: -10%;
+    }
+
+    #modal-pokemon-name {
+        font-size: 2.5rem;
+    }
+
+    #modal-pokemon-index {
+        font-size: 1.5rem;
+    }
+
+    .modal-pokemon-type {
+        font-size: 0.8rem;
+        padding: 0.75rem 1.25rem;
+    }
+}

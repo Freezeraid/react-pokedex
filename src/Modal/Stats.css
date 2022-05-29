@@ -3,7 +3,7 @@
 }
 
 #stats-container {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 #stats-container > div:not(:last-child){
@@ -82,4 +82,15 @@ progress.sub140::-webkit-progress-value {
 
 progress.over140::-webkit-progress-value {
     background: black;
+}
+
+@media screen and (max-width: 768px){
+    #stats-component {
+        padding: 10% 0%;
+    }
+
+    #stats-container > div:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    
 }

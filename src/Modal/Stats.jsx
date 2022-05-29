@@ -50,6 +50,5 @@ export default function Stats({stats}) {
       </div>
       <span className='stat-name'>Total: {total}</span>
     </div>
-    
   )
 }
