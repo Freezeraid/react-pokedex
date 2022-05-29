@@ -6,7 +6,7 @@ import POKEMONS from '../Constants/pokedex';
 import '../Backgrounds/Backgrounds.css'
 
 export default function Pokemon({id, names, types}) {
-    const { setIsVisible, setPokemonData } = useContext(ModalContext);
+    const { toggleModal, setPokemonData } = useContext(ModalContext);
 
     const formatPokeId = (index) => {
         if (index < 10){
@@ -35,7 +35,7 @@ export default function Pokemon({id, names, types}) {
     }
 
     const callModal = (e) => {
-        setIsVisible(prev => !prev); 
+        toggleModal(); 
         setPokemonData(POKEMONS[id - 1]);
     }
 

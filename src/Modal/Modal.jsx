@@ -11,7 +11,7 @@ import Stats from './Stats'
 import Informations from './Informations'
 
 export default function Modal() {
-    const { isVisible, setIsVisible, pokemonData } = useContext(ModalContext);
+    const { isVisible, toggleModal, pokemonData } = useContext(ModalContext);
 
     const formatPokeId = (index) => {
         if (index < 10){
@@ -40,12 +40,12 @@ export default function Modal() {
 
     return createPortal(
         <>
-            <div id="background-modal" className={getClassVisible()} onClick={() => setIsVisible(prev => !prev)}>
+            <div id="background-modal" className={getClassVisible()} onClick={() => toggleModal()}>
                 &nbsp;
             </div>
             <div id="modal-container" className={getClassVisible()}>
                 <div id="modal-pokemon-summary" className={pokemonData.type[0].toLowerCase() ?? ""}>
-                    <FontAwesomeIcon icon={faArrowLeft} onClick={() => setIsVisible(prev => !prev)} />
+                    <FontAwesomeIcon icon={faArrowLeft} onClick={() => toggleModal()} />
                     <div id="modal-pokemon-header-data">
                         <div>
                             <h2 id="modal-pokemon-name">{pokemonData.name.english}</h2>
